@@ -6,12 +6,12 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.2.5.RELEASE</version>
+		<version>2.2.4.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.rodrigofujioka.dev</groupId>
 	<artifactId>webapp</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.1.1-SNAPSHOT</version>
 	<name>webapp</name>
 	<description>Projeto da disciplina de programação Avançada para web</description>
 
@@ -21,7 +21,6 @@
 		<sonar.organization>rodrigofujioka</sonar.organization>
 		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 		<sonar.login>b372b734a4ee72cf170d1b181db6474c5d7f1844</sonar.login>
-
 	</properties>
 
 	<dependencies>
@@ -29,7 +28,20 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		
+		
+		<!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
+		<dependency>
+		    <groupId>com.h2database</groupId>
+		    <artifactId>h2</artifactId>
+		</dependency>
+		
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
